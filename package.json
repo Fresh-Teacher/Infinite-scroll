@@ -14,7 +14,10 @@
   "scripts": {
     "build": "parcel build *.html --public-url ./",
     "watch": "parcel watch * --public-url ./",
-    "link": "npm link ../../"
+    "link": "npm link ../../",
+    "start": "npm run build && node dist/index.js",
+    "dev": "npm run watch",
+    "test": "your-test-command"
   },
   "keywords": [
     "infinite-ajax-scroll",
